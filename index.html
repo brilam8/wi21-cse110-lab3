@@ -65,7 +65,7 @@
                 <p>Shrek! I also have an awesome reaction/meme to accompany my favorite movie. Change the browser window width to see another reaction/meme too!</p>
                 <picture>
                     <source srcset="./media/cursedhumanshrek.png" media="(min-width: 800px)" >
-                    <img src="./media/excuseme.jpg" width="200px" alt="excuseme" />
+                    <img src="./media/excuseme.jpg" width="200" alt="excuseme" />
                 </picture>
                 <br> 
             </section>
@@ -137,7 +137,7 @@
 
                 <h1> My favorite restaurant </h1>
                 <p>In-N-Out! You can find the In-N-Out I go to most often below! </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13196.16677944114!2d-118.4395346045494!3d34.22195375493704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c296d24a56497f%3A0x3eec463fbfce6c8!2sIn-N-Out%20Burger!5e0!3m2!1sen!2sus!4v1610495851656!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13196.16677944114!2d-118.4395346045494!3d34.22195375493704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c296d24a56497f%3A0x3eec463fbfce6c8!2sIn-N-Out%20Burger!5e0!3m2!1sen!2sus!4v1610495851656!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             
                 <h1> My favorite video </h1>
                 <video controls width="250">
@@ -202,7 +202,7 @@
                             <option value="Airheads">
                             <option value="KitKat">
                             <option value="Hersheys">
-                        </fieldset>
+                        </datalist>
                     </div>
                     <div>
                         <label for="time"> Favorite Time: </label>
@@ -210,7 +210,7 @@
                     </div>
                     <div>
                         <label for="color"> Your favorite color: </label>
-                        <input type="color" name="color" id="color" required>
+                        <input type="color" name="color" id="color">
                     </div>
                     <div>
                         <label for="contact"> Do you want to be contacted?: </label>
@@ -218,7 +218,7 @@
                     </div>
                     <div>
                         <label for="rating"> How highly would you rate this website?: </label>
-                        <input type="range" name="rating" id="rating" required>
+                        <input type="range" name="rating" id="rating">
                     </div>
                     <div>
                         <label for="file"> Send me a file?: </label>
@@ -240,12 +240,13 @@
                     </div>
                     <p> Favorite Name: </p>
                     <div>
-                        <label for="names"> Bob: </label>
-                        <input type="radio" name="names" id="Bob">
-                        <label for="names"> Joe: </label>
-                        <input type="radio" name="names" id="Bob">
-                        <label for="names"> Jack: </label>
-                        <input type="radio" name="names" id="Bob">
+                        
+                        <input type="radio" name="names" id="Bob" checked>
+                        <label for="Bob"> Bob </label>
+                        <input type="radio" name="names" id="Joe">
+                        <label for="Joe"> Joe </label>
+                        <input type="radio" name="names" id="Jack">
+                        <label for="Jack"> Jack </label>
                     </div>
                     <div>
                         <input type="reset" name="reset" id="reset">
