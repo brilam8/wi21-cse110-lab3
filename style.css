@@ -1,3 +1,10 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(196, 202, 219);
+}
+
 .movie {
     text-shadow: 1px 1px 1px #77f;
     font-weight: bold;
@@ -26,4 +33,69 @@
 
 #excusePic {
     max-width: 35%;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: .7rem;
+}
+
+th,
+td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 10px;
+}
+
+td {
+    text-align: center;
+}
+
+a[href*="github"] {
+    text-decoration-color: aqua;
+    text-decoration-style: wavy;
+}
+
+button:hover {
+    color: blue;
+    background-color: #77f;
+}
+
+ol span {
+    font-weight: bolder;
+    font-style:italic;
+}
+p::first-letter {
+    font-weight: bold;
+}
+
+div > p {
+    font-size: 15px;
+    font-weight: 500;
+}
+p + aside {
+    max-width: 25%;
+    padding-left: 1rem;
+    color: rgb(23, 34, 73);
+    padding-right: 1rem;
+    float:right;
+    box-shadow: inset 10px 0 10px -10px rgb(23, 34, 73);
+    font-style: italic;
+    
+}
+
+h1 ~ p {
+    color:rgb(23, 34, 73);
+    text-indent: 0.7rem;
+}
+
+span.activity {
+    text-shadow: 1px 1px 2px rgb(61, 85, 173);
 }
