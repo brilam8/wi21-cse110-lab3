@@ -3,12 +3,13 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(196, 202, 219);
+    background-color: rgb(124, 138, 175);
 }
 /* Class selector */
 .movie {
-    text-shadow: 1px 1px 1px #77f;
+    text-shadow: 1px 1px 1px #56f;
     font-weight: bold;
+    
 }
 
 /* Universal selector */
@@ -19,14 +20,21 @@ html, body {
 /* ID selector */
 #hobbies {
     display: inline;
+    
 }
 
 #skills {
     display: block;
+    background-color: rgba(78, 81, 92, 0.1);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 #foods {
     display:inline-block;
+    background-color: rgba(78, 81, 92, 0.2);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 #portrait {
@@ -55,7 +63,7 @@ table {
 /* Selector List */
 th,
 td {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #000000;
     padding: 10px 10px;
 }
 
@@ -95,7 +103,7 @@ div > p {
 p + aside {
     max-width: 25%;
     padding-left: 1rem;
-    color: rgb(23, 34, 73);
+    color: hsl(217, 45%, 32%);
     padding-right: 1rem;
     float:right;
     box-shadow: inset 10px 0 10px -10px rgb(23, 34, 73);
@@ -105,11 +113,11 @@ p + aside {
 
 /* General Sibling Combinator */
 h1 ~ p {
-    color:rgb(23, 34, 73);
+    color: hsla(217, 45%, 17%, 1);
     text-indent: 0.7rem;
 }
 
 /* Combining Two Selectors */
 span.activity {
-    text-shadow: 1px 1px 2px rgb(61, 85, 173);
+    text-shadow: 1px 1px 2px hsla(217, 45%, 17%, 0.4);
 }
