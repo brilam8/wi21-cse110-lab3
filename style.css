@@ -20,6 +20,7 @@ html, body {
 /* ID selector */
 #hobbies {
     display: inline;
+    position: static;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -32,9 +33,16 @@ html, body {
     height: 50px;
     text-decoration:solid
 }
+
+#swamp {
+    position:sticky;
+    top: 0;
+}
+
 #skills {
     display: block;
     background-color: rgba(78, 81, 92, 0.3);
+    position: relative;
     border-radius: 0.1in;
     border-style:dotted;
     border-width: 10px;
@@ -113,6 +121,10 @@ button:hover {
     background-color: #77f;
 }
 
+button:active {
+    text-decoration:line-through;
+}
+
 p::first-letter {
     font-weight: bold;
 }
@@ -150,4 +162,13 @@ h1 ~ p {
 /* Combining Two Selectors */
 span.activity {
     text-shadow: 1px 1px 2px hsla(217, 45%, 17%, 0.4);
+}
+
+#formFlex {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
