@@ -20,9 +20,18 @@ html, body {
 /* ID selector */
 #hobbies {
     display: inline;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 10px 5px 10px;
 }
 
+#hobbies p {
+    width: 400px;
+    height: 50px;
+    text-decoration:solid
+}
 #skills {
     display: block;
     background-color: rgba(78, 81, 92, 0.3);
@@ -30,14 +39,31 @@ html, body {
     border-style:dotted;
     border-width: 10px;
     border-color: #378;
-    padding: 2pc;
+    padding: 2pc 1pc 2pc 1pc;
+    margin: 10px 5px 10px 5px;
+}
+
+#skills p {
+    width: 350px;
+    height: 100px;
+    text-align:center;
 }
 
 #foods {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     display:inline-block;
     background-color: rgba(78, 81, 92, 0.2);
     border-radius: 5px;
-    padding: 10px;
+}
+
+#foods p {
+    width: 350px;
+    height: 75px;
+    text-align: left;
 }
 
 #portrait {
@@ -78,8 +104,7 @@ td {
 
 /* Attribute selector */
 a[href*="github"] {
-    text-decoration-color: aqua;
-    text-decoration-style: wavy;
+    text-decoration: underline overline;
 }
 
 /* Pseudo-classes */
