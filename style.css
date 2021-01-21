@@ -1,0 +1,29 @@
+.movie {
+    text-shadow: 1px 1px 1px #77f;
+    font-weight: bold;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#hobbies {
+    display: inline;
+}
+
+#skills {
+    display: block;
+}
+
+#foods {
+    display:inline-block;
+}
+
+#portrait {
+    max-width: 25%;
+    min-width: 15%;
+}
+
+#excusePic {
+    max-width: 35%;
+}
