@@ -25,9 +25,12 @@ html, body {
 
 #skills {
     display: block;
-    background-color: rgba(78, 81, 92, 0.1);
-    border-radius: 5px;
-    padding: 10px;
+    background-color: rgba(78, 81, 92, 0.3);
+    border-radius: 0.1in;
+    border-style:dotted;
+    border-width: 10px;
+    border-color: #378;
+    padding: 2pc;
 }
 
 #foods {
@@ -43,18 +46,20 @@ html, body {
 }
 
 #excusePic {
-    max-width: 35%;
+    max-width: 35vw;
 }
 
 /* Element selector */
 caption {
-    padding: 10px;
+    padding: 6mm;
     caption-side: bottom;
 }
 
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
     font-size: .7rem;
@@ -64,7 +69,7 @@ table {
 th,
 td {
     border: 1px solid #000000;
-    padding: 10px 10px;
+    padding: 0.7cm 0.7cm;
 }
 
 td {
@@ -101,7 +106,7 @@ div > p {
 
 /* Adjacent Sibling Combinator */
 p + aside {
-    max-width: 25%;
+    max-width: 25vw;
     padding-left: 1rem;
     color: hsl(217, 45%, 32%);
     padding-right: 1rem;
@@ -114,7 +119,7 @@ p + aside {
 /* General Sibling Combinator */
 h1 ~ p {
     color: hsla(217, 45%, 17%, 1);
-    text-indent: 0.7rem;
+    text-indent: 0.7em;
 }
 
 /* Combining Two Selectors */
