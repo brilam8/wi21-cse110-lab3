@@ -1,19 +1,22 @@
+/* Overall content of page */
 html, body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(196, 202, 219);
 }
-
+/* Class selector */
 .movie {
     text-shadow: 1px 1px 1px #77f;
     font-weight: bold;
 }
 
+/* Universal selector */
 * {
     font-family: 'Roboto', sans-serif;
 }
 
+/* ID selector */
 #hobbies {
     display: inline;
 }
@@ -35,6 +38,7 @@ html, body {
     max-width: 35%;
 }
 
+/* Element selector */
 caption {
     padding: 10px;
     caption-side: bottom;
@@ -48,6 +52,7 @@ table {
     font-size: .7rem;
 }
 
+/* Selector List */
 th,
 td {
     border: 1px solid rgb(0, 0, 0);
@@ -58,28 +63,35 @@ td {
     text-align: center;
 }
 
+/* Attribute selector */
 a[href*="github"] {
     text-decoration-color: aqua;
     text-decoration-style: wavy;
 }
 
+/* Pseudo-classes */
 button:hover {
     color: blue;
     background-color: #77f;
 }
 
-ol span {
-    font-weight: bolder;
-    font-style:italic;
-}
 p::first-letter {
     font-weight: bold;
 }
 
+/* Descendant Combinator */
+ol span {
+    font-weight: bolder;
+    font-style:italic;
+}
+
+/* Child Combinator */
 div > p {
     font-size: 15px;
     font-weight: 500;
 }
+
+/* Adjacent Sibling Combinator */
 p + aside {
     max-width: 25%;
     padding-left: 1rem;
@@ -91,11 +103,13 @@ p + aside {
     
 }
 
+/* General Sibling Combinator */
 h1 ~ p {
     color:rgb(23, 34, 73);
     text-indent: 0.7rem;
 }
 
+/* Combining Two Selectors */
 span.activity {
     text-shadow: 1px 1px 2px rgb(61, 85, 173);
 }
