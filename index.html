@@ -8,6 +8,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+
+        <style>
+            #favQuotes, #restaurant {
+                display:inline-block;
+            }
+        </style>
     </head>
     
     <body>
@@ -88,94 +94,102 @@
                 <!--source: https://iconscout.com/icon/node-js -->
             </div>
             <div id="foods">
-                <h1> Food Ratings</h1>
-                <p>
-                     
-                        10 years ago, I thought to myself... <q><em>I am never going to do food reviews. </em></q> Yet here we are... FOOD REVIEW TIME!
-                    
-                
-                </p>
-                <table>
-                    <caption> Ice Cream and Cheese Ratings </caption>
-                    <colgroup>
-                        <col>
-                        <col span="3" class="ice-cream">
-                        <col span="3" class="cheese">
-                    </colgroup>
-                    <tr>
-                        <td></td>
-                        <th scope="col">Mint</th>
-                        <th scope="col">Chocolate</th>
-                        <th scope="col">Vanilla</th>
-                        <th scope="col">Parmesan</th>
-                        <th scope="col">Cheddar</th>
-                        <th scope="col">Pepperjack</th>
-                    </tr>
-                    <tr>
-                        <th scope="row"> Ratings</th>
-                        <td> 4/10 </td>
-                        <td> 7/10 </td>
-                        <td> 10/10 </td>
-                        <td> 7/10 </td>
-                        <td> 5/10 </td>
-                        <td> 10/10 </td>
-                    </tr>
-                </table>
-                <details>
-                    <summary>Ratings Explanation: </summary>
-                    I tend to not like too much flavor in my foods, instead focusing more on the fragrance and overall texture of it.
-                    I am also not too picky when it comes to foods. Even if I gave something a low rating, I would probably still eat it if presented with it.
-                </details>
-                
-                <h3> Want to submit <em>food</em> for me to rate? </h3>
-                <form>
-                    <div>
-                        <label for="foodName"> Food: </label>
-                        <input type="text" name="foodName" id="foodName" required>
-                    </div>
-                    <button type="button"> Submit Food! </button>
-                </form>
-                
-                <br>
-                <h1> Favorite Quotes </h1>
                 <div>
-                    <ol>
-                        <li> The moon is made of cheese! <span class="quote">-Brian Lam </span> </li>
-                        <li> There are no mistakes, only happy little accidents <span class="quote">-Bob Ross</span></li>
-                        <li> ...if you gaze long enough into an abyss, the abyss will gaze back into you. <span class="quote">-Friedrich Nietzsche</span> </li>
+                    <h1> Food Ratings</h1>
+                    <p>
+                        
+                            10 years ago, I thought to myself... <q><em>I am never going to do food reviews. </em></q> Yet here we are... FOOD REVIEW TIME!
+                        
                     
-                    </ol>
-                </div>
-                <template>
+                    </p>
                     <table>
+                        <caption> Ice Cream and Cheese Ratings </caption>
+                        <colgroup>
+                            <col>
+                            <col span="3" class="ice-cream">
+                            <col span="3" class="cheese">
+                        </colgroup>
                         <tr>
-                            <td>Ignorance is bliss -Thomas Gray</td>
+                            <td></td>
+                            <th scope="col">Mint</th>
+                            <th scope="col">Chocolate</th>
+                            <th scope="col">Vanilla</th>
+                            <th scope="col">Parmesan</th>
+                            <th scope="col">Cheddar</th>
+                            <th scope="col">Pepperjack</th>
                         </tr>
                         <tr>
-                            <td>The best and most beautiful things in the world cannot be seen or even touched, they must be felt with the heart. -Helen Keller </td>
-                        </tr>
-                        <tr>
-                            <td>Gone, this table has. -Yoda.</td>
+                            <th scope="row"> Ratings</th>
+                            <td> 4/10 </td>
+                            <td> 7/10 </td>
+                            <td> 10/10 </td>
+                            <td> 7/10 </td>
+                            <td> 5/10 </td>
+                            <td> 10/10 </td>
                         </tr>
                     </table>
-                </template>
+                    <details>
+                        <summary>Ratings Explanation: </summary>
+                        I tend to not like too much flavor in my foods, instead focusing more on the fragrance and overall texture of it.
+                        I am also not too picky when it comes to foods. Even if I gave something a low rating, I would probably still eat it if presented with it.
+                    </details>
+                    
+                    <h3> Want to submit <em>food</em> for me to rate? </h3>
+                    <form>
+                        <div>
+                            <label for="foodName"> Food: </label>
+                            <input type="text" name="foodName" id="foodName" required>
+                        </div>
+                        <button type="button"> Submit Food! </button>
+                    </form>
+                </div>
+                <br>
+                <div id="favQuotes">
+                    <h1> Favorite Quotes </h1>
+                    <div>
+                        <ol>
+                            <li> The moon is made of cheese! <span class="quote">-Brian Lam </span> </li>
+                            <li> There are no mistakes, only happy little accidents <span class="quote">-Bob Ross</span></li>
+                            <li> ...if you gaze long enough into an abyss, the abyss will gaze back into you. <span class="quote">-Friedrich Nietzsche</span> </li>
+                        
+                        </ol>
+                    </div>
+                    <template>
+                        <table>
+                            <tr>
+                                <td>Ignorance is bliss -Thomas Gray</td>
+                            </tr>
+                            <tr>
+                                <td>The best and most beautiful things in the world cannot be seen or even touched, they must be felt with the heart. -Helen Keller </td>
+                            </tr>
+                            <tr>
+                                <td>Gone, this table has. -Yoda.</td>
+                            </tr>
+                        </table>
+                    </template>
+                </div>
 
-                <h1> My favorite restaurant </h1>
-                <p><span class="restaurant">In-N-Out!</span> You can find the In-N-Out I go to most often below! </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13196.16677944114!2d-118.4395346045494!3d34.22195375493704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c296d24a56497f%3A0x3eec463fbfce6c8!2sIn-N-Out%20Burger!5e0!3m2!1sen!2sus!4v1610495851656!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            
-                <h1> My favorite video </h1>
-                <video controls width="250">
+                <div id="restaurant">
+                    <h1> My favorite restaurant </h1>
+                    <p><span class="restaurant">In-N-Out!</span> You can find the In-N-Out I go to most often below! </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13196.16677944114!2d-118.4395346045494!3d34.22195375493704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c296d24a56497f%3A0x3eec463fbfce6c8!2sIn-N-Out%20Burger!5e0!3m2!1sen!2sus!4v1610495851656!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div>
+                    <h1> My favorite video </h1>
+                    <video controls width="250">
 
-                    <source src="./media/RickAstley.mp4"
-                            type="video/mp4">
+                        <source src="./media/RickAstley.mp4"
+                                type="video/mp4">
 
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </div>
 
-                <h1> Favorite Shape </h1>
-                <p>A square!</p>
-                <canvas width="100" height="100" style="border:1px solid"> </canvas>
+                <div>
+                    <h1> Favorite Shape </h1>
+                    <p>A square!</p>
+                    <canvas width="100" height="100" style="border:1px solid"> </canvas>
+                </div>
             </div>
             <div style="text-align:center;">
                 <h1> Want to send me a message? </h1>
