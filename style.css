@@ -28,6 +28,19 @@ html, body {
     
 }
 
+#yesDate {
+    order: 1;
+}
+
+#yesName {
+    order: 3;
+    align-self: center;
+}
+
+#yesEmail {
+    order: 5;
+    flex-grow: 1;
+}
 /* Universal selector */
 * {
     font-family: 'Roboto', sans-serif;
@@ -192,4 +205,12 @@ span.activity {
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+#ratings {
+    align-self: center;
+}
+
+#shape {
+    place-self: center;
 }
