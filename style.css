@@ -9,17 +9,18 @@
 @media only screen and (min-width: 1400px) {
     body {
         font-size: 16px;
-        background-color: rgb(124, 138, 175);
+        background-color: #124612;
     }
 }
 
-/* Overall content of page */
+/* selector list */
 html, body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(124, 138, 175);
 }
+
 /* Class selector */
 .movie {
     text-shadow: 1px 1px 1px #56f;
@@ -44,7 +45,7 @@ html, body {
 }
 
 #hobbies p {
-    width: 400px;
+    width: 25%;
     height: 50px;
     text-decoration:solid
 }
